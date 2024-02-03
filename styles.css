@@ -1,0 +1,758 @@
+
+*{
+  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/*navbar styling*/
+.nav{ 
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+.linkid{
+  display: inline-block;
+  padding: 35px;
+  color: grey;
+}
+.linkid:hover{
+  cursor: pointer;
+  color: rgba(128, 128, 128, 0.477);
+}
+.linkid:active{
+  color: #310872;
+}
+
+.companylink{
+  margin-left: 30px;
+  font-size: large;
+  font-weight: 700;
+  
+}
+#clearly{
+  color: #32064a;
+}
+#clearly:hover{
+  color: #390d66;
+}
+
+#clearly:active{
+  color: #41037863;
+}
+.contactus{
+  margin-right: 30px;
+  background-color: #32064a;
+  padding: 12px;
+}
+.contactus:hover{
+  background-color: #390d66;
+}
+
+.contactus:active{
+  background-color: #41037863;
+
+}
+#navbutton{
+  color: white;
+}
+/*mobile stuff*/
+#burger{
+  display: none;
+  font-size: x-large;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: 10px;
+}
+#burger:hover{
+ cursor: grab; 
+}
+.mobilelinkid{
+  padding: 5px;
+  color: grey;
+  display: inline-block;
+ 
+}
+.responsivenav{
+  display: none;
+  flex-direction: column;
+  animation: 1s ease-in ;
+}
+.responsivenav a p{
+  margin: .5rem 30px;
+  padding: 0;
+  
+}
+.responsivenav a:last-of-type{
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 820px){
+  #burger{
+    display: block;
+  }
+  .contactus, .navlinks{
+    display: none;
+  }
+  #h1img{
+    font-size: large;
+  }
+}
+
+
+/*end responsive navbar*/
+/*end navbar styling*/
+
+
+
+
+
+body{
+  min-height: 100vh;
+}
+  /*clearly clean main img and learnmore button*/
+  .mainimg{
+    text-align: center;
+    position: relative;
+    
+  }
+  #purpimg{
+    width: 97vw;
+    height: 27vw;
+  }
+  #learnbutton{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 7px;
+    background-color: #32064a;
+    font-weight: 100;
+    color: #ffffff;
+  }
+  #learnbutton:hover{
+    background-color: #390d66;
+  }
+  #learnbutton:active{
+    background-color: #41037863;
+  }
+  .imgtext{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #32064a;
+  }
+  #h1img{
+    top: 30%;
+    font-size: xx-large;
+    font-weight: 800;
+  }
+  #h3img{
+    top: 40%;
+
+  }
+  @media all and (max-width: 1300px){
+    #learnbutton{
+      padding: 9px;
+      top: 65%;
+    }
+    #h3img{
+      top: 45%
+    }
+  }
+ @media all and (max-width: 800px){
+    #h1img{
+      top: 25%;
+      padding-bottom: 10px;
+    }
+    #learnbutton{
+      top: 70%;
+      padding: 8px;
+    }
+    #h3img{
+      top: 45%;
+    }
+  } 
+  @media screen and (max-width: 475px){
+  #h1img{
+  top: 30%;
+  font-size: large;
+  }
+  #learnbutton{
+    display: none;
+  }
+  #h3img{
+    top: 55%;
+    max-width: 45%;
+  }
+}
+@media screen and (max-width: 330px){
+  #h1img{
+  top: 25%;
+  font-size: medium;
+  }
+  #learnbutton{
+    display: none;
+  }
+  #h3img{
+    top: 55%;
+    max-width: 45%;
+    font-size: small;
+  }
+}
+  /*end clearly clean main img and learnmore button*/
+
+
+
+
+
+  
+  /*mission statement*/
+  .mission{
+    text-align: center;
+    padding: 5%;
+  }
+  #ourmission{
+    padding-bottom: 2em;
+    color: gray;
+  }
+  #statement{
+    padding-bottom: 5%;
+    color: #32064a;
+  }
+  #underline{
+    border: 1px solid #D3D3D3;
+    margin: 0 20% 0 20%;
+  }
+/*end mission statement*/
+
+
+
+
+
+/*about us*/
+.about{
+  display: flex;
+  
+}
+.abouttext{
+  margin-left: 5%;
+  flex-wrap: wrap;
+}
+#aboutimg{
+display: inline-block;
+width: 60%;
+max-width: 950px;
+max-height: 500px;
+margin-left: 5%;
+}
+#aboutHeader{
+  display: inline-block;
+  margin-top: 5%;
+  color: grey;
+}
+#ipsom{
+  max-width: 70%;
+}
+#weAreLink{
+  text-decoration: underline;
+  color: rgb(89, 26, 84);
+}
+@media all and (max-width: 1000px){
+  #aboutimg{
+    max-height: 350px;
+    margin: 0;
+  }
+  .about{
+    display: block;
+    text-align: center;
+  }
+  #ipsom{
+    max-width: 100%;
+    margin-left: 1em;
+    margin-right: 2em;
+  }
+}
+@media all and (max-width: 500px){
+  #aboutimg{
+    width: 80vw;
+  }
+  #statement{
+    font-size: large;
+  }
+}
+@media screen and (max-width: 330px){
+  #whoweare{
+    padding-bottom: 1rem;
+  }
+}
+/*end about us*/
+
+
+
+
+
+/*our services*/ 
+.ourservices{
+  text-align: center;
+  margin-top: 5%;
+}
+#servehead{
+  padding-bottom: 30px;
+  color: grey;
+}
+.serviceheaders{
+  padding-top: 10px;
+}
+.serviceText{
+  padding-bottom: 0;
+}
+#whatwedo{
+  margin-bottom: 5%;
+  color: #32064a;
+}
+#serviceunderline{
+  border-bottom: 1px solid #D3D3D3;
+  margin: 0 20% 50px 20%;
+}
+/*end our services*/ 
+/* @media screen and (max-width: 330) {
+  
+} */
+
+
+
+
+
+  /*services descriptions links*/
+  .allLinks{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+  .cleaningImg{
+    max-height: 200px;
+  
+  }
+  .serviceItemContainer{
+    min-height: 400px;
+    min-width: 300px;
+    max-width: 300px;
+    background-color: white
+    
+  }
+  .serviceText{
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .serviceheaders{
+    padding-bottom: 10px;
+}
+.servicebtn{
+  border: none;
+  background-color: white;
+  color: black;
+  
+}
+.servicedescrip{
+  font-weight: 800;
+  font-size: large;
+  padding-bottom: 10%;
+}
+.serviceheaders{
+  color: grey;
+  font-size: small;
+  padding-bottom: 6%;
+}
+
+a:link {
+  color: black;
+    text-decoration: none;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+.categories{
+  text-align: center;
+  color: grey;
+}
+.categoriesbold{
+  text-align: center;
+  font-size: x-large;
+  font-weight: 500;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid grey;
+  margin: 0 30% 2% 30%;
+}
+/*end form header*/
+
+/*contact Header*/
+
+.contact{
+  text-align: center;
+  margin-top: 5%;
+}
+#contactsml{
+  padding-bottom: 30px;
+  color: grey;
+}
+#contactlrg{
+  margin-bottom: 5%;
+  font-size: x-large;
+  font-weight: 700;
+  color: #32064a;
+}
+#contactunderline{
+  border-bottom: 1px solid #D3D3D3;
+  margin: 0 20% 100px 20%;
+}
+/*end contact Header*/
+.contactcontent{
+  display: flex;
+  margin-bottom: 200px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 100px;
+  margin-right: 100px
+
+}
+#contactimg{
+  margin: auto;
+  width: 600px;
+  
+}
+.flexcontainer{
+  flex-direction: column;
+  margin: auto;
+}
+#contactus{
+  font-size: medium;
+  color: grey;
+  margin-top: 40px;
+  
+}
+#ourinfo{
+  font-size: x-large;
+  padding-bottom: 20px;
+}
+section.contactcontent p{
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.pdescrip{
+  color: grey;
+  
+}
+
+
+@media all and (max-width: 950px){
+  .contactcontent{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #contactimg{
+    width: 100%;
+    }
+    .flexcontainer{
+      margin: auto;
+    }
+    
+  
+}
+
+
+/*form styles*/
+
+.quote{
+  color: black;
+  line-height: 1.6;
+  padding: 1em;
+  margin-bottom: 5em;
+}
+#contactform{
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+}
+#quotelabel{
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.formpage > *{
+  padding: 1em;
+  background-color:rgb(224, 204, 225);
+  text-align: left;
+}
+
+#compInfo{
+  background-color: rgb(189, 149, 195);
+  text-align: center;
+}
+#compInfo h3{
+  margin-bottom: 1rem;
+  font-size: large;
+  padding-top: 1rem;
+  font-weight: 400;
+}
+.wrapper{
+  box-shadow: 0 0 20px 0 rgb(141, 131, 140);
+  
+}
+/*end form styles*/
+
+/* contact us form styles */
+.estimate-p{
+  padding-top: 1rem;
+  text-decoration: underline;
+}
+.estimate-p:hover{
+  color: #32064a;
+}
+.homepage-form{
+  margin-top: 2em;
+}
+.field-holder{
+  position: relative;
+  margin-bottom: 1.25em;
+}
+.homepage-form input{
+  border: 0;
+  border-bottom: 1px solid rgb(224, 204, 225);
+  outline: none;
+}
+.homepage-form input::placeholder{
+  font-size: medium;
+}
+#contactusBtn{
+  background-color: #32064a;
+  padding: .5rem 2em .5em 2em;
+  border: none;
+  color: white;
+  font-size: medium;
+}
+#contactusBtn:active{
+  background-color: rgb(141, 131, 140);
+}
+#contactusBtn:hover{
+  background-color: rgb(89, 26, 84);
+}
+
+/* contact us form end */
+
+/*input styling*/
+#compinfo{
+  max-width: 50%
+}
+.quote form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.formpage form label{
+  display: block;
+}
+.formpage form .full{
+  grid-column: 1 / 3;
+}
+
+#submitbtn, .formpage form input, #int {
+  width: 100%;
+  padding: .5em;
+  border: 1px solid rgb(189, 149, 195);
+}
+
+#submitbtn{
+  background-color: rgb(189, 149, 195);
+  border: 0;
+  text-transform: uppercase;
+}
+
+#submitbtn:hover, #submitbtn:focus{
+  background-color: #4a087191;
+  color: white;
+  outline: 0;
+  transition: background-color 2s ease-out;
+}
+/*end input styling*/
+
+
+
+
+/*large screen media queries*/
+@media(min-width: 700px){
+  .wrapper{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow:none;
+  }
+  #compInfo, #quotelabel {
+    text-align: left;
+    padding: 1em;
+  }
+}
+
+
+
+
+/*footer*/
+
+footer{
+  text-align: center;
+  background-color: #32064a;
+  position: relative;
+  height: 100px;
+}
+.footer{
+  display: inline-block;
+}
+
+
+ul {
+  text-decoration: none;
+  list-style: none;
+  margin-bottom: 20px;
+  margin-top: 1em;
+  font-size: smaller;
+  padding-left: 20px;
+  padding-right: 20px;
+  
+}
+
+.footerlist{
+  color: lightgray;
+}
+
+/*end footer*/
+
+
+/* success page */
+.success-body{
+  background-color: #ddc0d3;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+#successdiv{
+  margin: 10em auto 0 auto;
+  background-color: rgb(169, 126, 171);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgb(198, 120, 203);
+}
+#successdiv h1{
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: .5em;
+
+}
+#successdiv p{
+  padding-bottom: 2em;
+  text-align: center;
+}
+#successdiv a{
+  color: rgb(255, 255, 255);
+  text-align: center;  
+  font-size: medium;
+  text-decoration: underline;
+}
+#successdiv a:hover{
+  color: #32064a;
+}
+
+
+.success-body {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+
+
+.about-us{
+  height: 60vh;
+  width: 100%;
+  padding: 0;
+}
+
+.about{
+  width: 1130px;
+  max-width: 85%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text{
+  width: 540px;
+}
+
+.text h2{
+  font-size: 90px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.text h5{
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.text p{
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.data{
+  margin-top: 30px;
+}
+
+.hire{
+  font-size: 18px;
+  background: #4070f4;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.hire:hover{
+  background: #000;
+  border: 1px solid #4070f4;
+}
+
+.pic{
+  height: auto;
+  width: 500px;
+}
