@@ -92,7 +92,7 @@ const mainText = () => {
   if(window.innerWidth < 612){
     newDawnMainText.innerText = 'New Dawn'
 }else{
-  newDawnMainText.innerText = 'New Dawn Cleaning'
+  newDawnMainText.innerText = 'Crystal Clean Services'
 
 }
 }
